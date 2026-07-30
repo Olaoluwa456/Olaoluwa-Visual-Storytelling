@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pricing | Olaoluwa Visual Storytelling</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+background:#F5F5F5;
+color:#2E2E2E;
+}
+
+/* HERO */
+
+.hero{
+
+height:45vh;
+
+background:linear-gradient(rgba(11,31,58,.85),rgba(11,31,58,.85)),
+url(images/pricing-bg.jpg);
+
+background-size:cover;
+
+background-position:center;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+color:white;
+
+}
+
+.hero h1{
+
+font-size:60px;
+
+}
+
+.hero p{
+
+margin-top:15px;
+
+font-size:20px;
+
+color:#E8C766;
+
+}
+
+/* SECTION */
+
+.container{
+
+width:90%;
+
+max-width:1200px;
+
+margin:80px auto;
+
+}
+
+.section-title{
+
+text-align:center;
+
+margin-bottom:50px;
+
+}
+
+.section-title h2{
+
+font-size:40px;
+
+color:#0B1F3A;
+
+}
+
+.section-title p{
+
+color:#666;
+
+margin-top:10px;
+
+}
+
+/* PRICE CARDS */
+
+.pricing-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:35px;
+
+margin-bottom:80px;
+
+}
+
+.card{
+
+background:white;
+
+padding:35px;
+
+border-radius:15px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+transition:.4s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.card h3{
+
+color:#0B1F3A;
+
+font-size:28px;
+
+margin-bottom:10px;
+
+}
+
+.price{
+
+font-size:45px;
+
+font-weight:bold;
+
+color:#D4AF37;
+
+margin-bottom:25px;
+
+}
+
+.card ul{
+
+list-style:none;
+
+}
+
+.card li{
+
+padding:12px 0;
+
+border-bottom:1px solid #eee;
+
+}
+
+.btn{
+
+display:inline-block;
+
+margin-top:25px;
+
+padding:15px 35px;
+
+background:#D4AF37;
+
+color:#0B1F3A;
+
+text-decoration:none;
+
+border-radius:40px;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+background:#0B1F3A;
+
+color:white;
+
+}
+
+/* TABLE */
+
+table{
+
+width:100%;
+
+border-collapse:collapse;
+
+background:white;
+
+margin-top:40px;
+
+box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+}
+
+th{
+
+background:#0B1F3A;
+
+color:white;
+
+padding:18px;
+
+}
+
+td{
+
+padding:18px;
+
+border-bottom:1px solid #eee;
+
+}
+
+tr:hover{
+
+background:#fafafa;
+
+}
+
+/* BOOKING */
+
+.booking{
+
+margin-top:80px;
+
+background:#0B1F3A;
+
+padding:70px;
+
+border-radius:15px;
+
+text-align:center;
+
+color:white;
+
+}
+
+.booking h2{
+
+font-size:38px;
+
+margin-bottom:20px;
+
+}
+
+.booking p{
+
+max-width:700px;
+
+margin:auto;
+
+line-height:1.8;
+
+}
+
+footer{
+
+margin-top:80px;
+
+background:#111111;
+
+color:white;
+
+text-align:center;
+
+padding:30px;
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:40px;
+
+}
+
+.booking{
+
+padding:40px 25px;
+
+}
+
+}
+
+</style>
+
+</head>
+<header>
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            <img src="Gallery/Olaoluwa Visual Stroytelling Logo.png" alt="Olaoluwa Visual Storytelling">
+        </a>
+
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html"  >Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="pricing.html"class="active">Pricing</a></li>
+<li><a href="testimonials.html">Testimonials</a></li>
+<li><a href="faq.html">FAQ</a></li>
+        </ul>
+
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </nav>
+</header>
+<body>
+<section class="pricing-categories">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Choose a Service</h2>
+
+            <p>
+                Select the category that best matches your needs.
+                Each section contains detailed packages and pricing.
+            </p>
+
+        </div>
+
+        <div class="category-grid">
+
+            <!-- Photography -->
+
+            <div class="category-card">
+
+                <img src="images/photography.jpg" alt="Photography">
+
+                <h3>Photography</h3>
+
+                <p>
+
+                    Portraits, Weddings, Graduation,
+                    Birthday Sessions, Family Photography,
+                    Traditional Weddings and more.
+
+                </p>
+
+                <a href="photography.html" class="btn">
+
+                    View Packages
+
+                </a>
+
+            </div>
+
+            <!-- Videography -->
+
+            <div class="category-card">
+
+                <img src="images/videography.jpg" alt="Videography">
+
+                <h3>Videography</h3>
+
+                <p>
+
+                    Wedding Films, Event Coverage,
+                    Drone Videos, Highlight Reels,
+                    Commercial Videos and Editing.
+
+                </p>
+
+                <a href="videography.html" class="btn">
+
+                    View Packages
+
+                </a>
+
+            </div>
+
+            <!-- Commercial -->
+
+            <div class="category-card">
+
+                <img src="images/commercial.jpg" alt="Commercial">
+
+                <h3>Commercial & Corporate</h3>
+
+                <p>
+
+                    Product Photography,
+                    Corporate Events,
+                    School Events,
+                    Branding Photography
+                    and Business Content.
+
+                </p>
+
+                <a href="commercial.html" class="btn">
+
+                    View Packages
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<br>
+
+</div>
+
+<footer>
+
+        <div class="container footer-grid">
+
+            <div class="footer-about">
+
+                <h2>Olaoluwa Visual Storytelling</h2>
+
+                <p>
+
+                    We create timeless photographs that preserve genuine
+                    emotions, unforgettable celebrations, and life's
+                    greatest milestones.
+
+                </p>
+
+                <h4>
+                    Every Moment, Authentically Yours.
+                </h4>
+
+            </div>
+
+
+
+
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="about.html">About</a></li>
+
+                    <li><a href="services.html">Services</a></li>
+
+                    <li><a href="pricing.html">Pricing</a></li>
+
+                    <li><a href="portfolio.html">Portfolio</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+
+
+
+
+            <div class="footer-services">
+
+                <h3>Photography</h3>
+
+                <ul>
+
+                    <li>Portrait Sessions</li>
+
+                    <li>Graduation</li>
+
+                    <li>Birthdays</li>
+
+                    <li>Pre-Wedding</li>
+
+                    <li>Traditional Wedding</li>
+
+                    <li>Wedding Photography</li>
+
+                </ul>
+
+            </div>
+
+
+
+
+
+            <div class="footer-contact">
+
+                <h3>Contact</h3>
+
+                <p>📍 Nigeria</p>
+
+                <p>📞 +234 XXX XXX XXXX</p>
+
+                <p>✉ info@olauluwavisualstorytelling.com</p>
+
+                <div class="social-icons">
+
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="copyright">
+
+            <p>
+
+                © 2026 Olaoluwa Visual Storytelling.
+                All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
